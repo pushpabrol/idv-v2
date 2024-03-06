@@ -5,11 +5,16 @@
     flex-shrink: 0;
 }
 .demo-main {
-    margin-top: -35vh;
+    margin-top: -15vh;
     flex-shrink: 0;
 }
 .demo-header .mdl-layout__header-row {
     padding-left: 40px;
+    background-color: white;
+}
+
+.demo-header .mdl-layout__header-row img {
+    width: 10%;
 }
 .demo-container {
     max-width: 1600px;
@@ -41,7 +46,7 @@
     text-align: center;
 }
 .onfido-sdk-ui-Theme-footer .onfido-sdk-ui-Theme-logo {
-    background-image: url("../img/mgmresorts.png") !important;
+    background-image: url("../img/amazon.png") !important;
 }
 .onfido-sdk-ui-Button-button-primary {
     background-color: #f4eee1 !important;

@@ -118,7 +118,9 @@ router.post("/", checkSession, (req, res) => {
         sessionToken.exp = Math.floor(Date.now() / 1000) + 60;
         const signed = jwt.sign(sessionToken, process.env.APP_SECRET)
 
-        const continueUrl = `${auth0Payload.iss}continue/reset-password?state=${auth0State}&session_token=${signed}`
+//        const continueUrl = auth0Payload.transaction && auth0Payload.transaction !== null && auth0Payload.transaction === "auth" ? `${auth0Payload.iss}continue?state=${auth0State}&session_token=${signed}` : `${auth0Payload.iss}continue/reset-password?state=${auth0State}&session_token=${signed}`
+        const continueUrl = `${auth0Payload.iss}continue?state=${auth0State}&session_token=${signed}`
+
         res.redirect(continueUrl)
       })
       .catch(error => {

@@ -37,7 +37,6 @@ Before you can run this project, ensure you have the following prerequisites ins
         IDV_CHECK_INTERVAL= in ms
         IDV_CHECK_TIMES_RUN=times to run status check
         DEBUG=true
-        OKTA_URL=https://<>.okta.com
         WORKFLOW_ID=onfido workflow id
         ONFIDO_REGION=region
         COOKIE_SESSION_SECRET=encryption for cookie
